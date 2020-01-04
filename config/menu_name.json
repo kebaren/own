@@ -1,18 +1,38 @@
 {
-    "File":{
-        "New Window":"Ctrl+Shfit+N",
-        "New File":"Ctrl+N",
-        "Open File":"Ctrl+O",
-        "Add Project Folder":"Ctrl+Shfit+A",
-        "Reopen Project":" ",
-        "Reopen Last Item":"Ctrl+Shift+T",
-        "Save":"Ctrl+S",
-        "Save As..":"Ctrl+Shfit+S",
-        "Save All":" ",
-        "Close Tab":"Ctrl+W",
-        "Close Pane":"Ctrl+K Ctrl+W",
-        "Close Window":"Ctrl+Shift+W",
-        "Quit":"Ctrl+Q",
-        "Close All Tabs":" "
-    }
+    "main_menu":["File","Edit","View","Selection","Find","Package","Help"],
+    "File":[
+        "New Window             Ctrl+Shfit+N",
+        "New File               Ctrl+N",
+        "Open File              trl+O",
+        "Add Project Folder     Ctrl+Shfit+A",
+        "Reopen Project ",
+        "Reopen Last Item       Ctrl+Shift+T",
+        "Save                   Ctrl+S",
+        "Save As..              Ctrl+Shfit+S",
+        "Save All    ",
+        "Close Tab              Ctrl+W",
+        "Close Pane             Ctrl+K Ctrl+W",
+        "Close Window           Ctrl+Shift+W",
+        "Quit                   Ctrl+Q",
+        "Close All Tabs "
+    ],
+    "Edit":[
+        "Undo"
+    ],
+    "View":[
+        "Toggle Full Screen"
+    ],
+    "Selection":[
+        "Add Selection Above"
+    ],
+    "Find":[
+        "Find in Buffer"
+    ],
+    "Package":[
+        "none"
+    ],
+    "Help":[
+        "View Terms of User"
+    ]
+
 }

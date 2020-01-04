@@ -1,28 +1,33 @@
 import tkinter as tk
-from menu import file
+from . import file
 import readConf as rc
 class Menu:
-    def __init__(self,main_menu):
-        self.main_menu = main_menu
+    def __init__(self,root):
+        self.root = root
 
     def __del__(self):
-        self.main_menu
+        self.root
 
-    def create_menu(self):
-        menu_bar = tk.Menu(self.main_menu)
-        # other_menu = rc.ReadMenuName.read_menu_name()['File']
-        # for i in other_menu:
-        self.main_menu.add_cascade(label='File',menu=menu_bar)
+    def init_menu(root):
+        main_menu =tk.Menu(root)
+        add_menu = tk.Menu(main_menu)
+        data = rc.ReadMenuName.read_menu_name()
 
-        # for index1 in other_menu:
-        #     self.main_menu.add_command(index1)
-        #     for index2 in other_menu[' ']:
-        #         menu_bar.add_command(self.main_menu,label=(index2+other_menu[' '][index2]))
-        #
+        for menu_value in data["main_menu"]:
+            for val in data[menu_value]:
+                
+            main_menu.add_command(label=menu_value)
+            # for val in data[menu_value]:
+            #     add_menu.add_command(label=val,command=file.File.new_file)
+        # for va in data['File']:
+        #     add_menu.add_command(label=va)
+        lista = ["新建","打开","复制","退出"]
+        for item in lista:
+            add_menu.add_command(label=item)
 
-
-
-
+        main_menu.add_cascade(label='File',menu=add_menu)
+        # root['menu'] = main_menu
+        root.config(menu=main_menu)
 
 
 

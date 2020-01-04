@@ -1,6 +1,6 @@
 import tkinter as tk
 from menu  import menu
-
+from menu import file
 class OwnStart:
     def __init__(self,window):
 	    self.window = window
@@ -10,9 +10,9 @@ class OwnStart:
         self.window.geometry("600x600")
 
     def add_menu(self):
-        menubar = tk.Menu(self.window)
-        menu_add = menu.Menu(menubar)
-        menu_add.create_menu()
+        menu.Menu.init_menu(self.window)
+
+        # self.window.config(menu=menubar)
 
     def add_text(self):
         text = tk.Text(self.window)

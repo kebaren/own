@@ -51,3 +51,6 @@ class File:
 		pass
 	def close_all_tabs():
 		pass
+    # def get_all_method():
+    #     func_list = ['new_window','new_file','open_file','open_fold','add_project_folder','reopen_project','reopen_last_item','save','save_as','save_all','close_tab','close_pane','close_window','quit']
+    #     return func_list

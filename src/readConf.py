@@ -9,4 +9,5 @@ class ReadMenuName:
     def read_menu_name():
         with open("../config/menu_name.json","r",encoding="utf-8") as fw:
             data = json.load(fw)
+            
         return data
