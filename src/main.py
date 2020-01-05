@@ -1,13 +1,7 @@
 import tkinter as tk
-import start
-
+import setup
 def main():
-    window = tk.Tk()
-
-    own = start.OwnStart(window)
-    own.start()
-
-    window.mainloop()
+    setup.Own()
 
 if __name__ == '__main__':
-	main()
+    main()
