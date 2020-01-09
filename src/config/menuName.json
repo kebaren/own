@@ -1,0 +1,18 @@
+{
+    "fileName":{
+        "New Window":{"key":"Ctrl+Shift+N","func":"self.__new_window"},
+        "New File":{"key":"Ctrl+N","func":"self.__new_file"},
+        "Open File":{"key":"Ctrl+O","func":"self.__open_file"},
+        "Open Folder...":{"key":"Ctrl+Shift+O","func":"self.__open_folder"},
+        "Add Project Folder":{"key":"Ctrl+Shift+A","func":"self.__add_project_folder"},
+        "Reopen Last Item":{"key":"Ctrl+Shift+T","func":"self.__reopen_last_item"},
+        "Save":{"key":"Ctrl+S","func":"self.__save"},
+        "Save As":{"key":"Ctrl+Shift+S","func":"self.__save_as"},
+        "Save All":{"key":" ","func":"self.__save_all"},
+        "Close Tab":{"key":"Ctrl+W","func":"self.__close_tab"},
+        "Close Pane":{"key":"Ctrl+Shift,Ctrl+W","func":"self.__close_pane"},
+        "Close Window":{"key":"Ctrl+Shift+W","func":"self.__close_window"},
+        "Quit":{"key":"Ctrl+Q","func":"self.__quit"},
+        "CLose All Tab":{"key":" ","func":"self.__close_all_tab"}
+    }
+}

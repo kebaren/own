@@ -1,32 +1,25 @@
 import json
 import os
-
+import tkinter as tk
 
 class readConfig:
 
     def __init__(self):
-
-
+        pass
 
     def __read_json_config(self,file_name):
         if os.path.exists(file_name):
             if os.path.getsize(file_name):
                 with open(file_name,"r",encoding="utf-8") as fm:
                     data = json.load(fm)
-                    fw.flush()
-                    fw.close()
+                    fm.close()
                     return data
             else:
-                __write_json_config(filename,.datalist)
+                tk.messagebox.showerror(title="error!",text="configure file is emptry!")
         else:
-            __write_json_config(filename,self.datalist)
-
-    def __write_json_config(self,file_name,datalsit):
-        with open(file_name,"w",encoding="utf-8") as fw:
-            fw.write(datalist)
-            fw.flush()
-            fw.close()
+            tk.messagebox.showerror(title="error!",text="configre file does not exists!")
 
     def read_menu_name(self):
         file_name = "./config/menuName.json"
-        self.__read_json_config(file_name)
+        file_menu = self.__read_json_config(file_name)
+        return file_menu
