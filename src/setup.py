@@ -22,7 +22,7 @@ class Own():
     def __window_config(self,window):
         window.title("Own")
         window.geometry("800x600")
-        img = ImageTk.PhotoImage(file="own.ico")
+        img = ImageTk.PhotoImage(file="own.gif")
         window.tk.call('wm','iconphoto',window._w,img)
 
 
